@@ -1,1 +1,9 @@
+# Publish Quality Gate Result v6
+# Publish SonarQube's Quality Gate result on the Azure DevOps build result, to be used after the actual analysis.
 
+
+
+
+- task: SonarQubePublish@6
+  inputs:
+    pollingTimeoutSec: '300' # string. Required. Timeout (s). Default: 300.
