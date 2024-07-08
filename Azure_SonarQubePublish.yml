@@ -6,6 +6,7 @@ parameters:
   type: string  
   default: '300'
 
+steps:
 - task: SonarQubePublish@6
   inputs:
     pollingTimeoutSec: '${{parameters.pollingTimeoutSec}}'
